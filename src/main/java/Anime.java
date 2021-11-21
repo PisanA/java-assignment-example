@@ -37,7 +37,7 @@ public class Anime {
 		reviews.add(review);
 	}
 	
-	public boolean isGoodAnime() {
-		return score >= 7;
+	public boolean isGoodAnime(int goodScore) {
+		return this.score >= goodScore;
 	}
 }

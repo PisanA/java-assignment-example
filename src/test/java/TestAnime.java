@@ -43,11 +43,11 @@ public class TestAnime {
 	public void testIsGoodAnime() {
 		Anime goodAnime = new Anime("Hitoribocchi no Marumaru Seikatsu", 2019);
 		goodAnime.setScore(7.5);
-		assertTrue("Scores 7 and above are good anime", goodAnime.isGoodAnime());
+		assertTrue("Scores 7 and above are good anime", goodAnime.isGoodAnime(7));
 		
 		Anime badAnime = new Anime("Hachi-nan tte Sore wa Nai deshou", 2020);
 		badAnime.setScore(6.22);
-		assertFalse("Scores lower than 7 are bad anime", badAnime.isGoodAnime());
+		assertFalse("Scores lower than 7 are bad anime", badAnime.isGoodAnime(7));
 	}
 
 }
